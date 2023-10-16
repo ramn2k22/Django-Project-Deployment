@@ -1,0 +1,24 @@
+{% extends 'AuthNPassApp/base.html' %}
+{% load static %}
+{% block body_block %}
+
+
+<div class="jumbotron" style="background-color: goldenrod;">
+    {% if registered %}
+    <h1>Thank you for Registering !</h1>
+    {% else %}
+    <h1>Please Register Here!</h1>
+    <h3>Please fill out form: </h3>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ user_form.as_p}}
+        {{ profile_form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+    {% endif %}
+</div>
+
+
+
+{% endblock %}

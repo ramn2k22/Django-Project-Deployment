@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+</head>
+<body>
+    <style>
+        a{
+            color: white;
+        }
+    </style>
+    <nav class="navbar navbar-default navbar-static-top" style="background-color: brown;">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" style="color: white" href="{% url 'index' %}">INDEX</a></li>
+                <li><a class="navbar-link" style="color: white" href="{% url 'admin:index' %}">Admin</a></li>
+                <li><a class="navbar-link" style="color: white" href="{% url 'AuthNPassApp:register' %}">Registration</a></li>
+                <li><a class="navbar-link" style="color: white" href="#">Support</a></li>
+                {% if user.is_authenticated %}
+                <li><a class="navbar-link" style="color: white" href="{% url 'user_logout' %}">Logout</a></li>
+
+                {% else %}
+                <li><a class="navbar-link" style="color: white" href="{% url 'AuthNPassApp:user_login' %}">Login</a></li>
+
+                {% endif %}
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+    {% block body_block %}
+    {% endblock %}
+</div>
+</body>
+</html>
