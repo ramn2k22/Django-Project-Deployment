@@ -1,0 +1,272 @@
+{% extends "AuthNPassApp/base.html" %}
+{% block body_block %}
+{% load static %}
+
+<section class="our-menu" id="menu1">
+	<h1 class="heading" style="color: white;"><center>our food menu</center></h1>
+	<center><h3 class="sub-heading" style="color: white;">~ see what we offer ~</h3></center>
+
+	<div class="menu-container">
+		<div class="item">
+			<div class="item-name">
+				<h2>Breakfasts</h2>
+				<img src="{% static 'images/drinks.png' %}">
+			</div>
+			<div class="item-body">
+
+				<div class="item-menu">
+					<h3>Veg Breakfasts</h3>
+					<span class="dots"></span>
+					<h3>180 Rs</h3>
+					<ul>
+						<li><a href="#">Aaloo Paratha</a></li>
+						
+
+						
+						<li><a href="#">Vada Pav</a></li>
+						
+						
+						<li><a href="#">Mendu vada</a></li>
+						<li><a href="#">Dhokla</a></li>
+						<li><a href="#">Kachori</a></li>
+						<li><a href="#">Aaloo Khasta</a></li>
+						<li><a href="#">Masala Dosa</a></li>
+						<li><a href="#">Plain Dosa</a></li>
+						<li><a href="#">Idli Sambhar</a></li>
+					</ul>
+				</div>
+
+				<div class="item-menu">
+					<h3>Non-Veg Breakfast</h3>
+					<span class="dots"></span>
+					<h3>$220 Rs</h3>
+					<ul>
+						<li><a href="#">Egg Omlette</a></li>
+						<li><a href="#">Bread Omlette</a></li>
+						<li><a href="#">Cheese & Butter Omlette</a></li>
+						<li><a href="#">Plain Bhurji</a></li>
+						<li><a href="#">Butter Bhurji</a></li>
+						<li><a href="#">Omlette Pav</a></li>
+						<li><a href="#">Bhurji Pav</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-name">
+				<h2>Main Course</h2>
+				<img src="{% static "images/drinks.png" %}">
+			</div>
+			<div class="item-body">
+
+				<div class="item-menu">
+					<h3>Non-Veg main Course</h3>
+					<span class="dots"></span>
+					<h3>340 Rs</h3>
+					<ul>
+						<li><a href="#">Desi Chicken</a>400 </li>
+						<li><a href="#">Chicken Masala</a></li>
+						<li><a href="#">Chicken Curry</a></li>
+						<li><a href="#">Desi Mutton</a></li>
+						<li><a href="#">Handi Mutton</a></li>
+						<li><a href="#">Mutton Curry</a></li>
+						<li><a href="#">Egg Curry</a></li>
+					</ul>
+				</div>
+
+				<div class="item-menu">
+					<h3>Veg main Course</h3>
+					<span class="dots"></span>
+					<h3>$320 Rs</h3>
+					<ul>
+						<li><a href="#">Matar Mushroom</a></li>
+						<li><a href="#">Masala Mushroom</a></li>
+						<li><a href="#">Tikka Mushroom</a></li>
+						<li><a href="#">Matar Paneer</a></li>
+						<li><a href="#">Shahi Mushroom</a></li>
+						<li><a href="#">Masala Paneer</a></li>
+						<li><a href="#">Aaloo Dum</a></li>
+						<li><a href="#">Aaloo Jeera</a></li>
+						<li><a href="#">Aaloo matar</a></li>
+						<li><a href="#">Aaloo Gobhi</a></li>
+						<li><a href="#">Mix Veg</a></li>
+						<li><a href="#">Tendli(Kundru)</a></li>
+						<li><a href="#">Aaloo Baigan</a></li>
+						<li><a href="#">Shimla Mix</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">
+				<h2>Evening Snacks</h2>
+				<img src="{% static "images/drinks.png" %}">
+			</div>
+			<div class="item-body">
+
+				<div class="item-menu">
+					<h3>Veg Snacks</h3>
+					<span class="dots"></span>
+					<h3>160 Rs</h3>
+					<ul>
+						<li><a href="#">Frankie</a></li>
+						<li><a href="#">Veg Roll</a></li>
+						<li><a href="#">Paneer Roll</a></li>
+						<li><a href="#">Veg Kebab Paratha</a></li>
+						<li><a href="#">Maggie</a></li>
+						<li><a href="#">Cheese Maggie</a></li>
+						<li><a href="#">Noodles</a></li>
+						<li><a href="#">Hakka Noodles</a></li>
+						<li><a href="#">Schezwan Noodles</a></li>
+						<li><a href="#">Schezwan Hakka Noodles</a></li>
+						<li><a href="#">Pasta</a></li>
+						<li><a href="#">Cheesy Pasta</a></li>
+						<li><a href="#">Plain Sandwich</a></li>
+						<li><a href="#">Toast Sandwich</a></li>
+						<li><a href="#">Veg Grilled Sandwich</a></li>
+						<li><a href="#">Cheese Grilled Sandwich</a></li>
+					</ul>
+				</div>
+
+				<div class="item-menu">
+					<h3>Non-Veg Snacks</h3>
+					<span class="dots"></span>
+					<h3>250 Rs</h3>
+					<ul>
+						<li><a href="#">Chicken Roll</a></li>
+						<li><a href="#">Cheesy Chicken Roll</a></li>
+						<li><a href="#">Egg Chicken Roll</a></li>
+						<li><a href="#">Egg Roll</a></li>
+						<li><a href="#">Cheesy Egg Roll</a></li>
+						<li><a href="#">Bhuna Chicken</a></li>
+						<li><a href="#">Bhuna Butter Chicken</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-name">
+				<h2>Roti & Rice</h2>
+				<img src="{% static "images/drinks.png" %}">
+			</div>
+			<div class="item-body">
+
+				<div class="item-menu">
+					<h3>Roti</h3>
+					<span class="dots"></span>
+					<h3>40 Rs</h3>
+					<ul>
+						<li><a href="#">Plain Roti</a></li>
+						<li><a href="#">Butter Roti</a></li>
+						<li><a href="#">Tandoori Roti</a></li>
+						<li><a href="#">Butter Tandoori Roti</a></li>
+						<li><a href="#">Plain Naan</a></li>
+						<li><a href="#">Butter Naan</a></li>
+						<li><a href="#">Bhakari</a></li>
+
+					</ul>
+				</div>
+
+				<div class="item-menu">
+					<h3>Rice</h3>
+					<span class="dots"></span>
+					<h3>140 Rs</h3>
+					<ul>
+						<li><a href="#">Plain Rice</a></li>
+						<li><a href="#">Jeera Rice</a></li>
+						<li><a href="#">Fried Rice</a></li>
+						<li><a href="#">Schezwan Rice</a></li>
+						<li><a href="#">Tripple Rice</a></li>
+						<li><a href="#">Pulav</a></li>
+						<li><a href="#">Soyabean Rice</a></li>
+						<li><a href="#">Mixed Veg Rice</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-name">
+				<h2>Dessert & Beverages</h2>
+				<img src="{% static "images/drinks.png" %}">
+			</div>
+			<div class="item-body">
+
+				<div class="item-menu">
+					<h3>Dessert</h3>
+					<span class="dots"></span>
+					<h3>120 Rs</h3>
+					<ul>
+						<li><a href="#">Pastrie's</a></li>
+						<li><a href="#">Muffins</a></li>
+						<li><a href="#">Choco Lava Cake</a></li>
+						<li><a href="#">Gulab Jamun</a></li>
+						<li><a href="#">Rasamalai</a></li>
+						<li><a href="#">Misthi Dohi</a></li>
+						<li><a href="#">Halwa</a></li>
+					</ul>
+				</div>
+
+				<div class="item-menu">
+					<h3>Beverages</h3>
+					<span class="dots"></span>
+					<h3>90 Rs</h3>
+					<ul>
+						<li><a href="#">Drinking Water</a></li>
+						<li><a href="#">Soft Drinks</a></li>
+						<li><a href="#">Chocolate Milk</a></li>
+						<li><a href="#">Butter Milk</a></li>
+						<li><a href="#">Chai</a></li>
+						<li><a href="#">Coffee</a></li>
+						<li><a href="#">Mango Shake</a></li>
+						<li><a href="#">Banana Shake</a></li>
+						<li><a href="#">Cheeku Shake</a></li>
+						<li><a href="#">Strawberry Shake</a></li>
+						<li><a href="#">Vanilla Shake</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-name">
+				<h2>Dal & Add-ons</h2>
+				<img src="{% static "images/drinks.png" %}">
+			</div>
+			<div class="item-body">
+
+				<div class="item-menu">
+					<h3>Dal</h3>
+					<span class="dots"></span>
+					<h3>180 Rs</h3>
+					<ul>
+						<li><a href="#">Dal makhani</a></li>
+						<li><a href="#">Dal Tadka</a></li>
+						<li><a href="#">Plain Toor jeera dal</a></li>
+						<li><a href="#">Masoor dal</a></li>
+						<li><a href="#">Butter tadka Dal</a></li>
+						<li><a href="#">Ghee Dal</a></li>
+					</ul>
+				</div>
+
+				<div class="item-menu">
+					<h3>Add-Ons</h3>
+					<span class="dots"></span>
+					<h3>120 Rs</h3>
+					<ul>
+						<li><a href="#">Green Salad</a></li>
+						<li><a href="#">Papad</a></li>
+						<li><a href="#">Masala Papad</a></li>
+						<li><a href="#">Onion Salad</a></li>
+						<li><a href="#">Onion & Cucumber</a></li>
+						<li><a href="#">Beetroot with Onion</a></li>
+						<li><a href="#">Mixed Salad</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+{% endblock %}

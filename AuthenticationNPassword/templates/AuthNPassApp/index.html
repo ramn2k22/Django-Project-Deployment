@@ -1,8 +1,11 @@
 {% extends "AuthNPassApp/base.html" %}
 {% block body_block %}
-<div class="jumbotron">
-    <h1>Welcome to landing Page of Ram Niwash Pandey's Site</h1>
-    <!-- <img src="https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?cs=srgb&dl=aroma-aromatic-art-434213.jpg&fm=jpg" alt=""> -->
-</div>
-
+{% load static %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<!-- <h1 style="font-family: agbalumo; font-weight: bold; color: lightseagreen;"><marquee behavior="" direction="">Hello Customer, Thanks for visiting our restaurant page. Please make an order or book seat, have a nice treat</marquee></h1> -->
+<h1 style="font-family: agbalumo; margin-top: 15%; font-weight: lighter; color: antiquewhite; font-size: 70px;"><center>Welcome to</center></h1>
+<h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: lighter; color: antiquewhite; font-size: 65px;"><center>Engineer's Restaurant</center></h1>
+<center><a href="{% url 'AuthNPassApp:menu' %}"><button type="submit" class="btn btn-success" style="font-family: agbalumo; background-color: white; color: red; font-style: italic;" value="Explore to Menu">explore to Menu</button></center>
 {% endblock %}

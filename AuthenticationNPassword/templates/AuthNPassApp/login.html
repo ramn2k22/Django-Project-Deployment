@@ -1,18 +1,21 @@
 {% extends 'AuthNPassApp/base.html' %}
 {% block body_block %}
+<div class="container">
+    <div class="jumbotron" style="background-color: lightblue; opacity: 0.7; margin-top: 8%;">
 
-<div class="jumbotron" style="background-color: goldenrod;">
-
-    <h1>Please Login</h1>
-    <form action="{% url 'AuthNPassApp:user_login'%}" method="post">
+    <h1 align="center" style="margin-top: 5%; font-family: agbalumo;">Please Login</h1>
+    <form action="{% url 'AuthNPassApp:user_login'%}" method="post" class="RegisterForm">
         {% csrf_token %}
+        <center>
         <label for="username">Username: </label>
-        <input type="text" name="username" placeholder="Enter Username">
+        <input type="text" name="username" placeholder="Enter Username"><br>
         <label for="password">Password: </label>
-        <input type="password" name="password">
-        <button type="submit" class="btn btn-success">Submit</button>
+        <input type="password" name="password" placeholder="password"><br>
+        <button type="submit" class="btn btn-success" id="button2">Submit</button>
+    </center>
     </form>
 
+</div>
 </div>
 
 {% endblock %}

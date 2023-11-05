@@ -57,6 +57,13 @@ def register(request):
 
     return render(request, 'AuthNPassApp/registration.html',{'user_form': user_form, 'profile_form':profile_form, 'registered':registered})
 
+def menu(request):
+
+    return render(request, "AuthNPassApp/menu.html", {})
+
+def contacts(request):
+
+    return render(request, "AuthNPassApp/contacts.html", {})
 
 def user_login(request):
 

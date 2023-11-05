@@ -3,20 +3,21 @@
 {% block body_block %}
 
 
-<div class="jumbotron" style="background-color: goldenrod;">
+<div class="container">
+    <div class="jumbotron" style="background-color: lightblue; opacity: 0.7;">
     {% if registered %}
     <h1>Thank you for Registering !</h1>
     {% else %}
-    <h1>Please Register Here!</h1>
-    <h3>Please fill out form: </h3>
+    <h1 style="font-family: agbalumo; margin-left: 13%;">Please Register Here!</h1>
 
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {{ user_form.as_p}}
-        {{ profile_form.as_p }}
-        <input type="submit" value="Submit">
+        <!-- {{ profile_form.as_p }} -->
+        <button type="submit" class="btn btn-success" style="margin-left: 45%;">Submit</button>
     </form>
     {% endif %}
+</div>
 </div>
 
 

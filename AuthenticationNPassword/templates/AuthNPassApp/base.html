@@ -1,23 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     
     <title>Page Title</title>
     <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="base_body">
     <style>
         a{
             color: white;
         }
     </style>
-    <nav class="navbar navbar-default navbar-static-top" style="background-color: brown;">
+    <nav class="navbar navbar-default navbar-static-top fixed" style="background-color: brown;">
         <div class="container">
             <ul class="nav navbar-nav">
-                <li><a class="navbar-brand" style="color: white" href="{% url 'index' %}">INDEX</a></li>
-                <li><a class="navbar-link" style="color: white" href="{% url 'admin:index' %}">Admin</a></li>
+                <li><a class="navbar-brand" style="color: white" href="{% url 'index' %}">Home</a></li>
+                <li><a class="navbar-link" style="color: white" href="{% url 'AuthNPassApp:menu' %}">Menu</a></li>
+                <li><a class="navbar-link" style="color: white" href="{% url 'admin:index' %}">Reservation</a></li>
+                <li><a class="navbar-link" style="color: white" href="{% url 'AuthNPassApp:contacts' %}">Contacts</a></li>
                 <li><a class="navbar-link" style="color: white" href="{% url 'AuthNPassApp:register' %}">Registration</a></li>
-                <li><a class="navbar-link" style="color: white" href="#">Support</a></li>
                 {% if user.is_authenticated %}
                 <li><a class="navbar-link" style="color: white" href="{% url 'user_logout' %}">Logout</a></li>
 
@@ -33,5 +38,6 @@
     {% block body_block %}
     {% endblock %}
 </div>
+<!-- Add font awesome icons -->
 </body>
 </html>

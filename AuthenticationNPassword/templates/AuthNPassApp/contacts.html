@@ -1,0 +1,40 @@
+{% extends "AuthNPassApp/base.html" %}
+{% block body_block %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="contacts_body" style="background-image: url(https://th.bing.com/th/id/R.8bc3ea2ff9c1027d50195268eb5ddfa1?rik=t3cO0q5vZoaRug&riu=http%3a%2f%2fwww.businesseye.co.uk%2fapp%2fuploads%2f2020%2f08%2fcontactus2.jpg&ehk=Dbh0vEurQVTwXdJ1QsMmU33qQoC6bG8F0CePDZPhKd8%3d&risl=&pid=ImgRaw&r=0);">
+    <div class="container">
+    <div class="jumbotron" style="background-color: lightblue; opacity: 0.9;">
+    <h3 style="font-family: agbalumo; color: rgb(30, 1, 1); margin-left: 35%;">Thanks for using Our Site</h3>
+
+    <h3 style="font-family: agbalumo; color: rgb(30, 1, 1); margin-left: 20%;">Please Fill out the Form for our team to contact you.</h3>
+    <form method="post">
+        {% csrf_token %}
+        
+        <label for="f_name">First Name: </label>
+        <input type="text" name="f_name" placeholder="First Name"><br>
+        <label for="l_name">Last Name: </label>
+        <input type="text" name="l_name"><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email"><br>
+        <label for="contact">Mob. Number: </label>
+        <input type="phone" name="contact">
+        <button type="submit" class="btn btn-success" id="button1">Submit</button>
+    </div>
+    </form>
+    
+    
+
+</div>
+</body>
+</html>
+{% endblock %}
